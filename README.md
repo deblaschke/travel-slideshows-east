@@ -17,6 +17,7 @@ The slideshows have been tested on the following browsers:
    - Chrome on Windows, macOS and Android (NOTE: Not responsive on mobile devices)
    - Internet Explorer on Windows (NOTE: Might need to allow blocked content)
    - Safari on macOS
+   - Edge on Windows
 
 The following slideshow attibutes can be customized:
 
