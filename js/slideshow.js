@@ -132,6 +132,18 @@ function slideshow() {
   }
 }
 
+// Handle left and right arrow keys
+document.onkeydown = function(event) {
+  switch (event.key) {
+    case 'ArrowLeft':
+      changePic(-1);
+      break;
+    case 'ArrowRight':
+      changePic(1);
+      break;
+  }
+}
+
 // Load and play audio if configured
 if (SLIDESHOW_AUDIO) {
   // Create audio object
