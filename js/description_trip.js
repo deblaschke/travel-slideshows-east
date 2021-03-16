@@ -103,6 +103,12 @@ function getDescription(path) {
           trip = dir[0].substring(1, 5) + " Summer Vacation II";
           break;
 
+        // Autumn Vacation cases
+        case "1991FallFoliage":
+        case "1992FallFoliage":
+          trip = dir[0].substring(1, 5) + " Autumn Vacation";
+          break;
+
         // One-year Winter Break cases
         case "2015NewMexico":
           trip = dir[0].substring(1, 5) + " Winter Break";
