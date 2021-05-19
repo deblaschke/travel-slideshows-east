@@ -3,7 +3,7 @@ function getDescription(path) {
   var result = "";
 
   // path is of format "*/dir/file.jpg"
-  // dir is of format "20nn*"
+  // dir is of format "nnnn[-nn]*"
   // file is of format "nnn_picture-description"
 
   // Process valid paths (must have directory separator and .jpg extension)
@@ -55,7 +55,7 @@ function getDescription(path) {
     }
 
     // Append trip name if valid dir format
-    var dir = path.match(/\/[0-9]{4}(-[0-9]{2})?[A-Z]*\//gi);
+    var dir = path.match(/\/[0-9]{4}(-[0-9]{2})?[A-Z]{1}[A-Z0-9]*\//gi);
     if (dir != null) {
       var trip = "";
 
